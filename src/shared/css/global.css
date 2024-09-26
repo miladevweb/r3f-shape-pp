@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0d100f;
+    --foreground: #fefefe;
+    --primary: #db2500;
+  }
+
+  body {
+    @apply bg-background text-foreground min-h-screen overflow-x-clip;
+  }
+
+  picture {
+    @apply block;
+  }
+
+  img {
+    @apply object-cover size-full;
+  }
+}
